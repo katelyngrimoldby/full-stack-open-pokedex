@@ -62,6 +62,7 @@ jobs:
 
   notification:
     needs: [tag_release]
+    if: always()
     runs-on: ubuntu-20.04
     steps:
       - name: Success
